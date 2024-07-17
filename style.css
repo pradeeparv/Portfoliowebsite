@@ -41,18 +41,19 @@
     }
   }
   
-    .aboutimg{
-      width: 150px;
-    }
+
   
     @media (max-width: 768px) {
       .aboutimg 
         {
-        margin-right: 80px;
-        width: 50px;
-        
-    
+          margin-right: 0;
+          width: 100%;
+          max-width: 100%;
+          height: auto;  
         }
+        .headtext {
+          text-align: center;
+      }
       }
   
   #about h1 {
@@ -83,7 +84,7 @@
   
   /*Skill Section*/
   #skills .btn {
-   background-color: #E2DFD0;
+   background-color: #f3f2ee;
     color: rgb(20, 20, 20);
     transition: background-color 0.3s ease;
     border: none;
@@ -100,6 +101,34 @@
     color: #F8D082;
   }
   
+    @media (max-width: 768px) {
+      #skills .frontend-box {
+          width: 100%; /* Make the boxes full width */
+          margin: 10px auto; /* Add some margin for spacing */
+      }
+
+      #skills .backend-box {
+        width: 100%; /* Make the boxes full width */
+        margin: 10px auto; /* Add some margin for spacing */
+    }
+      
+      /* Adjust padding and font size for better mobile view */
+      #skills .box h4 {
+          font-size: 1.5rem;
+          padding: 10px 0;
+      }
+  
+      .frontend-box button {
+          width: 100%; /* buttons full width */
+          margin: 5px 0; /* Add margin for spacing */
+      }
+
+      .backend-box button {
+        width: 100%; /* buttons full width */
+        margin: 5px 0; /* Add margin for spacing */
+    }
+    }
+
   
   
   /* Project*/
@@ -152,10 +181,10 @@
   }
   
   @media (max-width: 768px) {
-    .box 
-      {
-        width:90%;
-      }
+    .boxes {
+      width: 150%; /* Adjusted width for mobile */
+      margin: 0 auto 20px auto; /* Center the boxes and add bottom margin */
+  }
     }
   
   .boxes li{
