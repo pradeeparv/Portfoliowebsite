@@ -81,6 +81,21 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .text1 {
+        font-size: small; /* Adjust font size for better visibility on mobile */
+        animation: typing-mobile 5s steps(50, end) infinite; /* Adjust timing and steps for mobile */
+    }
+}
+
+@keyframes typing-mobile {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
   
   /*Skill Section*/
   #skills .btn {
